@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+settings.py
+*.pyc
+*~
+*.log
+*.pot
+
+# Virtual Environment
+ecomvenv/
+venv/
+.venv/
+env/
+.env/
+ENV/
+bin/
+lib/
+include/
+
+# Databases
+*.sqlite3
+db.sqlite3
+
+# Media and Static files (if generated locally or on deployment)
+# You should generally ignore uploaded user media and generated static files
+# as these are typically managed on the server side or recreated during deployment.
+media/
+static/
+
+# IDE-specific files and directories
+.vscode/
+.idea/
+
+# Testing and coverage reports
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
