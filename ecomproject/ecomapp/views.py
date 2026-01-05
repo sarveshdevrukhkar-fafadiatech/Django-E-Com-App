@@ -1,0 +1,14 @@
+from django.shortcuts import render
+from .models import Category, Products
+from rest_framework import  viewsets
+from .serializers import CategorySerializer, ProductsSerializer
+
+
+class CategoryViewSet(viewsets.ModelViewSet):
+    queryset = Category.objects.all()
+    serializer_class = CategorySerializer
+
+
+class ProductsViewSet(viewsets.ModelViewSet):
+    queryset = Products.objects.all()
+    serializer_class = ProductsSerializer
